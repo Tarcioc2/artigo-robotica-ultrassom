@@ -1,0 +1,10 @@
+\chapter{Aplicação na Robótica}
+\label{chap:mat}
+
+A Universidade Federal do Espírito Santo (UFES)  construiu um robô móvel de tração diferencial. O robô foi batizado como Brutus, sua estrutura básica possui  uma plataforma circular e quatro rodas, duas dessas rodas são rodas livres(sem nenhum tipo de tração) e as outras duas são  tracionadas por motores  de corrente contínua.  Esse robô foi construído com a finalidade de prever e evitar colisões enquanto se desloca em algum ambiente de terreno regular onde o seu sistema não possui um conhecimento prévio sobre os obstáculos e limitações intrínsecas nesse ambiente.\\
+\\
+A nível de hardware o robô conta com um microcontrolador MC68332 que é responsável por controlar sensores, lógicas comportamentais e os atuadores. Já a nível de software o Brutus dispõe de um sistema em C++, esse sistema recebe informações dos sensores, com base nessas informações é definido uma saída para seus atuadores, no caso os motores DC conectados na placa microcontroladora.\\
+\\
+O fluxo do sistema se inicia quando o sensor ultrassônico emite ondas sonoras ciclicamente no ambiente, com base nisso é medido o tempo que essas ondas colidem em um objeto e geram um eco que é recebido pelo sensor e convertido em um sinal elétrico, tornando assim possível a distância dos objetos.  O sinal elétrico é enviado para a placa que faz a conversão do sinal elétrico e através de lógica são definidos os valores de saída para os motores DC, seja para mudar a orientação do robô ou a velocidade.\\
+
+
